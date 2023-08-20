@@ -387,7 +387,7 @@ header a {
 
 .team-member .social-link:hover,
 .team-member .social-link:focus {
-  background-color: var(--success, #31d0aa);
+  background-color: var(--ocean, #404bbf);
 }
 
 .social-icon {
@@ -469,15 +469,15 @@ header a {
   background-color: var(--cloud, #f4f4fd);
 
   transition: color var(--transition-dur-and-fn),
-    border-style var(--transition-dur-and-fn),
     background-color var(--transition-dur-and-fn),
+    border-color var(--transition-dur-and-fn),
     box-shadow var(--transition-dur-and-fn);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--white);
-  border-style: none;
+  border-color: transparent;
   background-color: var(--ocean, #404bbf);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -507,7 +507,8 @@ header a {
   transition: box-shadow var(--transition-dur-and-fn);
 }
 
-.projects-link:hover {
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -535,7 +536,7 @@ header a {
 }
 
 .projects-link:hover,
-.projects-link:hover {
+.projects-link:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -617,6 +618,10 @@ header a {
   letter-spacing: 0.02em;
 }
 
+.social-list-footer {
+  gap: 16px;
+}
+
 .social-link-footer {
   width: 100%;
   height: 100%;
@@ -674,7 +679,8 @@ header a {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
   transition: opacity var(--transition-dur-and-fn),
-    visibility var(--transition-dur-and-fn);
+    visibility var(--transition-dur-and-fn),
+    transform var(--transition-dur-and-fn);
 }
 
 .close-btn {
@@ -691,6 +697,9 @@ header a {
   line-height: 0;
   background-color: var(--accent, #e7e9fc);
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: background-color var(--transition-dur-and-fn),
+    border var(--transition-dur-and-fn);
 }
 
 .close-btn:hover,
