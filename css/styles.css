@@ -88,6 +88,13 @@ button {
 
 .page-header {
   border-bottom: 1px solid var(--accent);
+
+  box-shadow:
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+
+  background: var(----white);
 }
 
 .page-header .page-logo-header {
@@ -132,6 +139,26 @@ button {
   color: var(--navyblue);
 }
 
+.page-header-contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+.page-header-link {
+  padding: 24px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  transition: color var(--transition-dur-and-fn);
+}
+
+.page-header-link:hover,
+.page-header-link:focus {
+  color: var(--ocean, #404bbf);
+}
+
 .page-active {
   position: relative;
   color: var(--ocean, #404bbf);
@@ -148,25 +175,12 @@ button {
   background-color: var(--ocean, #404bbf);
 }
 
-.page-header-contacts-list {
-  display: flex;
-  gap: 40px;
-}
-
-.page-header-link {
-  padding: 24px 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--navyblue);
-}
-
 .page-header-contact {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: var(--state);
+  transition: color var(--transition-dur-and-fn);
 }
 
 .page-header-contact:hover,
@@ -222,6 +236,7 @@ button {
   color: var(--white);
   border: none;
   border-radius: 4px;
+  transition: background-color var(--transition-dur-and-fn);
 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
